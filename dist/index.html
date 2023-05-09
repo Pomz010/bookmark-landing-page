@@ -9,6 +9,7 @@
   <title>Frontend Mentor | Bookmark landing page</title>
 </head>
 <body class="font-Rubik">
+  <div class="lg:container mx-auto overflow-x-hidden">
     <header class="p-6">
       <nav class="flex justify-between">
         <span><img src="images/logo-bookmark.svg" alt="Brand logo"></span>
@@ -24,8 +25,8 @@
   
     <main class="text-slate-500">
       <!-- HERO SECTION -->
-      <div class="lg:grid lg:grid-cols-2 flex flex-col-reverse mb-16">
-        <div class="md:px-20 md:pr-10 place-self-center px-5 text-center lg:text-start grid">
+      <div class="lg:grid lg:grid-cols-2 flex flex-col-reverse mb-16 mx-auto w-full">
+        <div class="md:px-20 place-self-center px-5 text-center lg:text-start grid">
           <h1 class="font-Rubik font-bold lg:text-5xl text-4xl leading-tight">A Simple Bookmark Manager</h1>
           <p  class="my-10">A clean and simple interface to organize your favourite websites. Open a new 
             browser tab and see your sites load instantly. Try it for free.</p>
@@ -35,36 +36,36 @@
           </div>
         </div>
 
-        <div class="sm:my-16 my-8 relative">
+        <div class="my-16 relative md:px-20">
           <div class="grid justify-center items-center"><img src="images/illustration-hero.svg" alt="Hero visual icon"></div>
-          <div class="bg-blue-700 h-4/6 rounded-l-full absolute -z-10 bottom-0 -right-0 md:w-4/6 w-5/6"></div>
+          <div class="bg-blue-700 h-4/6 rounded-l-full absolute -z-10 bottom-0 right-0 md:w-4/6 w-5/6"></div>
         </div>
       </div>
       <!-- END OF HERO SECTION -->
   
       <!-- FEATURES SECTION -->
-      <div class="text-center p-6">
-        <div>
+      <div class="text-center">
+        <div class="mx-auto max-w-2xl">
           <h2 class="font-bold text-3xl pb-5">Features</h2>
           <p>Our aim is to make it quick and easy for you to access your favourite websites. 
             Your bookmarks sync between your devices so you can access them on the go.</p>
-          <ul class="grid lg:grid-cols-3 grid-cols-1 border-t-2 lg:border-t-0 my-10 border-b-2 lg:w-3/5 mx-auto">
+          <ul class="grid lg:grid-cols-3 grid-cols-1 border-t-2 lg:border-t-0 border-b-2 mx-auto my-8">
             <li class="mx-auto content-center hover:cursor-pointer w-full border-b-2 lg:border-b-0"><span class="border-solid border-b-8 border-white hover:border-red-500 py-5 w-full inline-block hover:text-red-500">Simple Bookmarking</span></li>
             <li class="mx-auto content-center hover:cursor-pointer w-full border-b-2 lg:border-b-0"><span class="border-solid border-b-8 border-white hover:border-red-500 py-5 w-full inline-block hover:text-red-500">Speedy Searching</span></li>
             <li class="mx-auto content-center hover:cursor-pointer w-full"><span class="border-solid border-b-8 border-white hover:border-red-500 py-5 w-full inline-block hover:text-red-500">Easy Sharing</span></li>
           </ul>
         </div>
-        <div class="flex lg:grid lg:grid-cols-2 flex-col-reverse">
-          <div class="col-start-2">
-            <div class="py-4">
+        <div class="flex lg:grid lg:grid-cols-2 flex-col mx-auto w-full">
+          <div class="my-16 relative col-start-1">
+            <div class="grid justify-center items-center"><img src="images/illustration-features-tab-1.svg" alt="Features visual icon"></div>
+            <div class="bg-blue-700 h-4/6 rounded-r-full absolute -z-10 -bottom-10 left-0 md:w-4/6 w-5/6"></div>
+          </div>
+          <div class="col-start-2 lg:flex justify-center items-center md:px-20">
+            <div class="py-4 lg:text-left">
               <h2 class="font-bold text-3xl pb-5">Bookmark in one click</h2>
               <p>Organize your bookmarks however you like. Our simple drag-and-drop interface 
                 gives you complete control over how you manage your favourite sites.</p>
             </div>
-          </div>
-          <div class="sm:my-16 my-16 relative col-start-1">
-            <div class="grid justify-center items-center"><img src="images/illustration-features-tab-1.svg" alt="Features visual icon"></div>
-            <div class="bg-blue-700 h-4/6 rounded-r-full absolute -z-10 -bottom-10 -left-6 md:w-4/6 w-5/6"></div>
           </div>
         </div>
       </div>
@@ -72,14 +73,14 @@
   
       <!-- PROOF SECTION -->
       <div class="text-center p-6 my-16">
-        <div>
+        <div class="mx-auto max-w-xl">
           <h2 class="font-bold text-3xl pb-5">Download the extension</h2>
           <p>We’ve got more browsers in the pipeline. Please do let us know if you’ve 
             got a favourite you’d like us to prioritize.</p>
         </div>
   
-        <div class="content-center">
-          <div class="shadow-lg rounded-2xl p-5">
+        <div class="content-center lg:grid lg:grid-cols-3 gap-10 my-24 max-w-4xl mx-auto">
+          <div class="shadow-lg rounded-2xl p-5 relative -top-10">
             <div>
               <span class="inline-block py-8"><img src="images/logo-chrome.svg" alt="Browser logo"></span>
               <div class="leading-6 my-3">
@@ -107,7 +108,7 @@
             </div>
           </div>
 
-          <div class="shadow-lg rounded-2xl p-5">
+          <div class="shadow-lg rounded-2xl p-5 relative -bottom-10"">
             <div>
               <span class="inline-block py-8"><img src="images/logo-opera.svg" alt="Browser logo"></span>
               <div class="leading-6 my-3">
@@ -210,7 +211,7 @@
         </div>
       </div>
     </footer>
-
+  </div>
 </body>
 </html>
 

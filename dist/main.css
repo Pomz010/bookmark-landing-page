@@ -524,40 +524,6 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
-.container{
-  width: 100%;
-}
-
-@media (min-width: 640px){
-  .container{
-    max-width: 640px;
-  }
-}
-
-@media (min-width: 768px){
-  .container{
-    max-width: 768px;
-  }
-}
-
-@media (min-width: 1024px){
-  .container{
-    max-width: 1024px;
-  }
-}
-
-@media (min-width: 1280px){
-  .container{
-    max-width: 1280px;
-  }
-}
-
-@media (min-width: 1536px){
-  .container{
-    max-width: 1536px;
-  }
-}
-
 .absolute{
   position: absolute;
 }
@@ -697,6 +663,10 @@ video {
 
 .max-w-4xl{
   max-width: 56rem;
+}
+
+.max-w-sm{
+  max-width: 24rem;
 }
 
 .max-w-xl{
@@ -1093,6 +1063,12 @@ h1, h2, h3 {
 
 .hover\:outline-1:hover{
   outline-width: 1px;
+}
+
+@media (min-width: 640px){
+  .sm\:mb-8{
+    margin-bottom: 2rem;
+  }
 }
 
 @media (min-width: 768px){

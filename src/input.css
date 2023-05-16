@@ -12,8 +12,6 @@ h1, h2, h3 {
     color: #2a1d47;
 }
 
-/* @layer components {
-    .hoverBtnIndigo {
-      @apply hover:bg-transparent hover:outline-solid lg:hover:outline-blue-700 hover:outline hover:outline-2 hover:text-blue-700;
-    }
-} */
+.form-error-style {
+    @apply bg-rose-500 outline outline-2 outline-rose-500 rounded-md text-left;
+ }
